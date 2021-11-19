@@ -7,7 +7,7 @@ const firebaseAppConfig = getFirebaseConfig();
 const firebaseApp = initializeApp(firebaseAppConfig);
 
 const loginBtn = document.getElementById("loginButton");
-const signupBtn = document.getElementById("signUnBtn");
+const signupBtn = document.getElementById("signUpButton");
 
 const googleSignInBtn = document.getElementById("googleSignInButton");
 const facebookSignInBtn = document.getElementById("facebookSignInButton");
@@ -20,5 +20,5 @@ loginBtn.addEventListener("click", function()
 
 signupBtn.addEventListener("click", function()
 {
-    
+    window.location.href = "signUpScreen.html";
 });
