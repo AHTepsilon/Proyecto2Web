@@ -4,10 +4,14 @@ module.exports =
 {
     mode: "development",
     devtool: "eval-source-map",
-    entry : "./src/index.js",  
+    entry : 
+    {
+        index : "./src/index.js",
+        login: "./src/loginScreen.js",
+        signUp: "./src/signUpScreen.js"
+    },  
     output: 
     {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js"
     }
 }
