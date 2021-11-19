@@ -6,4 +6,19 @@ import {getFirebaseConfig} from "./firebase-config";
 const firebaseAppConfig = getFirebaseConfig();
 const firebaseApp = initializeApp(firebaseAppConfig);
 
-alert("it work");
+const loginBtn = document.getElementById("loginButton");
+const signupBtn = document.getElementById("signUnBtn");
+
+const googleSignInBtn = document.getElementById("googleSignInButton");
+const facebookSignInBtn = document.getElementById("facebookSignInButton");
+const outlookSignInBtn = document.getElementById("outlookSignInButton");
+
+loginBtn.addEventListener("click", function()
+{
+    window.location.href = "loginScreen.html";
+});
+
+signupBtn.addEventListener("click", function()
+{
+    
+});
