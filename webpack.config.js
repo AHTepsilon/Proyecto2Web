@@ -8,7 +8,8 @@ module.exports =
     {
         index : "./src/index.js",
         login: "./src/loginScreen.js",
-        signUp: "./src/signUpScreen.js"
+        signUp: "./src/signUpScreen.js",
+        landingPage: "./src/landingPage.js"
     },  
     output: 
     {
