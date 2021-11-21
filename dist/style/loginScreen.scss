@@ -1,0 +1,135 @@
+$bgColor: #A1D51C;
+$divBgColor: white;
+$mainButtonColor: #A1D51C;
+$secondaryButtonColor: #FF7A00;
+
+body /*Fondo*/
+{
+    background-color: $bgColor;
+}
+
+@mixin keepInCenter
+{   
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.mainBox /*Caja blanca del medio*/
+{
+    /*margin: auto;
+    padding: 70px 0;
+    margin-top: 150px;
+    width: 650px;
+    background-color: var(--divBgColor);*/
+
+    margin: auto;
+    margin-top: 50px;
+    width: 1150px;
+    height: 565px;
+    left: 137px;
+    top: 95px;
+
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 92px;
+}
+
+#imageLogo
+{
+    @include keepInCenter();
+    padding-top: 15px;
+}
+
+#userCircle
+{
+    @include keepInCenter();
+    padding-top: 25px;
+}
+
+.loginData
+{
+    @include keepInCenter();
+    padding-top: 40px;
+    width: 25%;
+
+    margin-bottom: 35px;
+}
+
+.buttons
+{
+    @include keepInCenter();
+    padding-top: 10px;
+    width: 25%;
+
+    margin-bottom: 35px;
+}
+
+.textfield
+{
+    margin: 5px;
+}
+
+@mixin textSpaces
+{
+    border: none;
+    width: 300px;
+    height: 35px;
+    left: 34.24%;
+    right: 34.24%;
+    top: 43.36%;
+    bottom: 52.15%;
+
+    background: #FFFFFF;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#usernameText
+{
+    @include textSpaces();
+}
+
+#passwordText
+{
+    @include textSpaces();
+}
+
+#logButton
+{
+    margin: 5px;
+    margin-bottom: 5px;
+
+    border: none;
+    width: 300px;
+    height: 35px;
+    background: $mainButtonColor;
+    color: white;
+    border-radius: 10px;
+
+    &:hover
+    {
+        background-color: darken($mainButtonColor, 25%);
+    }
+}
+#forgotPassButton
+{
+    margin: 5px;
+
+    border: none;
+    background: none;
+
+    color: #3D348B;
+
+    &:hover
+    {
+        color: lighten(#3D348B, 25%);
+    }
+}
+
+.itsabutton:hover
+{
+    cursor:pointer;
+}

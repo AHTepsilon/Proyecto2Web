@@ -30,40 +30,40 @@ body /*Fondo*/
     background: #FFFFFF;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 92px;
-}
 
-#imageLogo
-{
-    @include keepInCenter();
-    padding-top: 15px;
-}
+    #imageLogo
+    {
+        @include keepInCenter();
+        padding-top: 15px;
+    }
 
-#userCircle
-{
-    @include keepInCenter();
-    padding-top: 25px;
-}
+    #userCircle
+    {
+        @include keepInCenter();
+        padding-top: 25px;
+    }
 
-#separatorV
-{
-    @include keepInCenter();
-    width: 675px;
-}
+    #separatorV
+    {
+        @include keepInCenter();
+        width: 675px;
+    }
 
-.regularLogin /*Botones superiores*/
-{
-    @include keepInCenter();
-    padding-top: 40px;
-    width: 25%;
+    .regularLogin /*Botones superiores*/
+    {
+        @include keepInCenter();
+        padding-top: 40px;
+        width: 25%;
 
-    margin-bottom: 35px;
-}
+        margin-bottom: 35px;
+    }
 
-.signingIn /*Botones Inferiores*/
-{
-    @include keepInCenter();
-    padding-top: 25px;
-    width: 25%;
+    .signingIn /*Botones Inferiores*/
+    {
+        @include keepInCenter();
+        padding-top: 25px;
+        width: 25%;
+    }
 }
 
 @mixin buttonsUp
