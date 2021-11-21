@@ -1,0 +1,183 @@
+body {
+  background-color: #A1D51C;
+}
+
+.mainBox {
+  margin: auto;
+  margin-top: 50px;
+  width: 1150px;
+  height: 565px;
+  left: 137px;
+  top: 95px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 92px;
+}
+
+#imageLogo {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+}
+
+#userCircle {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+}
+
+#separatorV {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 675px;
+}
+
+.regularLogin {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  width: 25%;
+  margin-bottom: 35px;
+}
+
+.signingIn {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+  width: 25%;
+}
+
+#loginButton {
+  border: none;
+  width: 436px;
+  height: 27px;
+  background: #A1D51C;
+  color: white;
+  border-radius: 10px;
+}
+
+#loginButton:hover {
+  background-color: #4c640d;
+}
+
+#signUpButton {
+  border: none;
+  width: 436px;
+  height: 27px;
+  background: #A1D51C;
+  color: white;
+  border-radius: 10px;
+}
+
+#signUpButton:hover {
+  background-color: #4c640d;
+}
+
+#googleSignInButton {
+  border: none;
+  width: 436px;
+  height: 27px;
+  background: #FF7A00;
+  color: white;
+  border-radius: 10px;
+}
+
+#googleSignInButton:hover {
+  background-color: #803d00;
+}
+
+#facebookSignInButton {
+  border: none;
+  width: 436px;
+  height: 27px;
+  background: #FF7A00;
+  color: white;
+  border-radius: 10px;
+}
+
+#facebookSignInButton:hover {
+  background-color: #803d00;
+}
+
+#outlookSignInButton {
+  border: none;
+  width: 436px;
+  height: 27px;
+  background: #FF7A00;
+  color: white;
+  border-radius: 10px;
+}
+
+#outlookSignInButton:hover {
+  background-color: #803d00;
+}
+
+.itsabutton {
+  margin: 5px;
+}
+
+.itsabutton:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=initialPage.css.map */

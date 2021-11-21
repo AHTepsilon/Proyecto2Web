@@ -1,0 +1,132 @@
+
+$bgColor: #A1D51C;
+$divBgColor: white;
+$mainButtonColor: #A1D51C;
+$secondaryButtonColor: #FF7A00;
+
+body /*Fondo*/
+{
+    background-color: $bgColor;
+}
+
+@mixin keepInCenter
+{   
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.mainBox /*Caja blanca del medio*/
+{
+    margin: auto;
+    margin-top: 50px;
+    width: 1150px;
+    height: 565px;
+    left: 137px;
+    top: 95px;
+
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 92px;
+}
+
+#imageLogo
+{
+    @include keepInCenter();
+    padding-top: 15px;
+}
+
+#userCircle
+{
+    @include keepInCenter();
+    padding-top: 25px;
+}
+
+#separatorV
+{
+    @include keepInCenter();
+    width: 675px;
+}
+
+.regularLogin /*Botones superiores*/
+{
+    @include keepInCenter();
+    padding-top: 40px;
+    width: 25%;
+
+    margin-bottom: 35px;
+}
+
+.signingIn /*Botones Inferiores*/
+{
+    @include keepInCenter();
+    padding-top: 25px;
+    width: 25%;
+}
+
+@mixin buttonsUp
+{
+    border: none;
+    width: 436px;
+    height: 27px;
+    background: $mainButtonColor;
+    color: white;
+    border-radius: 10px;
+
+    &:hover
+    {
+        background-color: darken($mainButtonColor, 25%);
+    }
+}
+
+#loginButton /*Botón de login*/
+{
+    @include buttonsUp();
+}
+
+#signUpButton /*Botón de Sign Up*/
+{
+    @include buttonsUp();
+}
+
+@mixin buttonsLow
+{
+    border: none;
+    width: 436px;
+    height: 27px;
+    background: $secondaryButtonColor;
+    color: white;
+    border-radius: 10px; 
+
+    &:hover
+    {
+        background-color: darken($secondaryButtonColor, 25%);
+    }
+}
+
+#googleSignInButton /*Botón de Sign In con Google*/
+{
+    @include buttonsLow();
+}
+
+#facebookSignInButton /*Botón de Sign In con Facebook*/
+{
+    @include buttonsLow();
+}
+
+#outlookSignInButton /*Botón de Sign In con Outlook*/
+{
+    @include buttonsLow();
+}
+
+.itsabutton /*Clase general de los botones*/
+{
+    margin: 5px;
+
+    &:hover
+    {
+        cursor:pointer;
+    }
+}
