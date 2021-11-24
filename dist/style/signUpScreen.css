@@ -1,167 +1,177 @@
-
-:root /*Variables enrutadas*/
-{
-    --bgColor: #A1D51C;
-    --divBgColor: white;
-    --mainButtonColor: #A1D51C;
-    --secondaryButtonColor: #FF7A00;
+body {
+  background-color: #A1D51C;
 }
 
-body /*Fondo*/
-{
-    background-color: var(--bgColor);
-}
-
-.mainBox /*Caja blanca del medio*/
-{
-    /*margin: auto;
+.mainBox {
+  /*margin: auto;
     padding: 70px 0;
     margin-top: 150px;
     width: 650px;
     background-color: var(--divBgColor);*/
-
-    margin: auto;
-    margin-top: 50px;
-    width: 1150px;
-    height: 565px;
-    left: 137px;
-    top: 95px;
-
-    background: #FFFFFF;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 92px;
+  margin: auto;
+  margin-top: 50px;
+  width: 1150px;
+  height: 565px;
+  left: 137px;
+  top: 95px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 92px;
 }
 
-#imageLogo
-{
-    margin: auto;
-    padding-top: 15px;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
+#imageLogo {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
 }
 
-#userCircle
-{
-    margin: auto;
-    padding-top: 25px;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
+#userCircle {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
 }
 
-.loginData
-{
-    padding-top: 40px;
-    margin: auto;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    width: 25%;
-    align-items: center;
-
-    margin-bottom: 35px;
+.loginData {
+  padding-top: 40px;
+  width: 25%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
 }
 
-.buttons
-{
-    padding-top: 10px;
-    margin: auto;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    width: 25%;
-    align-items: center;
-
-    margin-bottom: 35px;
+.buttons {
+  padding-top: 10px;
+  width: 25%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
 }
 
-.textfield
-{
-    margin: 5px;
+.textfield {
+  margin: 5px;
 }
 
-#usernameText
-{
-    border: none;
-    width: 300px;
-    height: 35px;
-    left: 34.24%;
-    right: 34.24%;
-    top: 43.36%;
-    bottom: 52.15%;
-
-    background: #FFFFFF;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+#usernameText {
+  border: none;
+  width: 300px;
+  height: 35px;
+  left: 34.24%;
+  right: 34.24%;
+  top: 43.36%;
+  bottom: 52.15%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
-#passwordText
-{
-    border: none;
-    width: 300px;
-    height: 35px;
-    left: 34.24%;
-    right: 34.24%;
-    top: 43.36%;
-    bottom: 52.15%;
-
-    background: #FFFFFF;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+#passwordText {
+  border: none;
+  width: 300px;
+  height: 35px;
+  left: 34.24%;
+  right: 34.24%;
+  top: 43.36%;
+  bottom: 52.15%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
-#emailText
-{
-    border: none;
-    width: 300px;
-    height: 35px;
-    left: 34.24%;
-    right: 34.24%;
-    top: 43.36%;
-    bottom: 52.15%;
-
-    background: #FFFFFF;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+#emailText {
+  border: none;
+  width: 300px;
+  height: 35px;
+  left: 34.24%;
+  right: 34.24%;
+  top: 43.36%;
+  bottom: 52.15%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
-#cPasswordText
-{
-    border: none;
-    width: 300px;
-    height: 35px;
-    left: 34.24%;
-    right: 34.24%;
-    top: 43.36%;
-    bottom: 52.15%;
-
-    background: #FFFFFF;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+#cPasswordText {
+  border: none;
+  width: 300px;
+  height: 35px;
+  left: 34.24%;
+  right: 34.24%;
+  top: 43.36%;
+  bottom: 52.15%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
-#logButton
-{
-    margin: 2px;
-    margin-bottom: 5px;
-
-    border: none;
-    width: 300px;
-    height: 35px;
-    background: var(--mainButtonColor);
-    color: white;
-    border-radius: 10px;
+#logButton {
+  margin: 2px;
+  margin-bottom: 5px;
+  border: none;
+  width: 300px;
+  height: 35px;
+  background: #A1D51C;
+  color: white;
+  border-radius: 10px;
 }
 
-#logButton:hover
-{
-    background-color: #709c00;
+#logButton:hover {
+  background-color: #4c640d;
 }
 
-.itsabutton:hover
-{
-    cursor:pointer;
+.itsabutton:hover {
+  cursor: pointer;
 }
+/*# sourceMappingURL=signUpScreen.css.map */

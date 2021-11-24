@@ -11,3 +11,8 @@ const password = document.getElementById("passwordText");
 
 const logBtn = document.getElementById("logButton");
 const forgotPassBtn = document.getElementById("forgotPassButton");
+
+logBtn.addEventListener("click", function()
+{
+    window.location.href = "landingPage.html";
+});

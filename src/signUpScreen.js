@@ -12,3 +12,8 @@ const password = document.getElementById("passwordText");
 const cPassword = document.getElementById("cPasswordText");
 
 const sUpBtn = document.getElementById("logButton");
+
+sUpBtn.addEventListener("click", function()
+{
+    window.location.href = "landingPage.html";
+});

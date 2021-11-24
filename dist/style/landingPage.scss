@@ -1,0 +1,79 @@
+    $bgColor: #A1D51C;
+    $divBgColor: white;
+    $mainButtonColor: #A1D51C;
+    $secondaryButtonColor: #FF7A00;
+
+body /*Fondo*/
+{
+    background-color: $divBgColor;
+}
+
+header
+{
+    background-color: $bgColor;
+    width: 1307px;
+    height: 110px;
+    left: 0px;
+    top: 0px;
+    margin: -10px;
+    padding: 10px;
+
+    background: #A1D51C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+#upperHead
+{
+    display: flex;
+    margin-top:-10px;
+}
+
+#imageLogo
+{
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 200px;
+    height: 52.33px;
+}
+
+#navigationBar
+{
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.itsabutton /*Clase general de los botones*/
+{
+    margin-left: 30px;
+    margin-right: 30px;
+
+    border: none;
+    background: none;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: white;
+
+    &:hover
+    {
+        cursor:pointer;
+        color: $secondaryButtonColor;
+        fill: $secondaryButtonColor; 
+    }
+}
+
+#userB
+{
+    height: 30px;
+}
+
+#fruits
+{
+    margin-top: -650px;
+    margin-bottom: -200px;
+    margin-right: -160px;
+    width: 1320px;
+    height: 500px;
+
+}
