@@ -27,13 +27,28 @@ function register(e, event)
     .then((user_credential) => 
     {
         console.log(user_credential);
-        switchScreen();
+        const user = 
+        {
+            "id": user_credential.user.uid,
+            "user": username.value,
+            "email": email.value,
+            "password": password.value,
+            "passwordConfirm": cPassword.value
+        }
+    
+        const dbRef = ref(db, "users/" + user.id);
+        set(dbRef, user).then(() =>
+        {
+            alert("Usuario guardado");
+            switchScreen();
+        });
     })
     .catch((error) =>
     {
         alert("Email or password invalid, please try again");
         console.log(error.message);
     });
+
 }
 
 sUpBtn.addEventListener("click", function()
