@@ -11,7 +11,9 @@ const marketHouseBtn = document.getElementById("marketHouseButton");
 const savedBtn = document.getElementById("savedButton");
 const userBtn = document.getElementById("userButton");
 
-marketHouseBtn.addEventListener("click", function()
+const logoHyperlink = document.getElementById("imageLogo");
+
+logoHyperlink.addEventListener("click", function()
 {
-    window.location.href = "marketHouse.html";
-});
+    window.location.href = "landingPage.html";
+})

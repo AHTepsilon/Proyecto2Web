@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style/landingPage.css">
+    <link rel = "stylesheet" href = "style/marketHouse.css">
     <link rel = "icon" type = "image/vnd.microsoft.icon" href = "images/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,30 +31,18 @@
     </header>
 
     <div>
-        <h1 style = "font-family: 'Nunito', sans-serif; 
-        font-size: 48px; margin-left: 30px; font-weight: bold; color: #3D348B">
-            Welcome!
-        </h1>
-        
-        <p style = "font-family: 'Nunito', sans-serif; 
-        font-size: 24px; margin-left: 130px; font-weight: normal;
-        margin-right: 500px; color: #3D348B">
-            FreshFind is your best choice for keeping track of your foodstuff’s expirations 
-            and freshness. Aside from giving you options for recipes with the food you have 
-            available right away!
-        </p>
+        <h2 id = "articleTitle">
+            Welcome to the Market House
+        </h2>
 
-        <p style = "font-family: 'Nunito', sans-serif; 
-        font-size: 24px; margin-left: 130px; font-weight: lighter;
-        margin-right: 500px; color: #3D348B">
-            Download and pair with the app for the complete experience
-        </p>
-
-        <img src = "images/fruitWoah.png" id = "fruits">
+        <div id = "buttonsDiv">
+            <button id = "fruitsButton" class = "articleButton">Fruits</button>
+            <button id = "vegsButton" class = "articleButton">Vegetables</button>
+            <button id = "nutsButton" class = "articleButton">Nuts</button>
+        </div>
     </div>
+    
+    <script src = "marketHouse.js"></script>
 
-
-
-    <script src = "landingPage.js"></script>
 </body>
 </html>
