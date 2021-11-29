@@ -10,6 +10,7 @@ const scannedItemsBtn = document.getElementById("scannedItemsButton");
 const marketHouseBtn = document.getElementById("marketHouseButton");
 const savedBtn = document.getElementById("savedButton");
 const userBtn = document.getElementById("userButton");
+const calendarBtn = document.getElementById("calendar");
 
 const logoHyperlink = document.getElementById("imageLogo");
 
@@ -17,3 +18,8 @@ logoHyperlink.addEventListener("click", function()
 {
     window.location.href = "landingPage.html";
 })
+
+calendarBtn.addEventListener("click", function()
+{
+    window.location.href = "calendar.html";
+});

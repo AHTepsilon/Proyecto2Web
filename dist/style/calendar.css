@@ -1,0 +1,60 @@
+body {
+  background-color: white;
+}
+
+header {
+  background-color: #A1D51C;
+  width: 1307px;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+  margin: -10px;
+  padding: 10px;
+  background: #A1D51C;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#upperHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -10px;
+}
+
+#imageLogo {
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 200px;
+  height: 52.33px;
+}
+
+#imageLogo:hover {
+  cursor: pointer;
+}
+
+#navigationBar {
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.itsabutton {
+  margin-left: 30px;
+  margin-right: 30px;
+  border: none;
+  background: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+.itsabutton:hover {
+  cursor: pointer;
+  color: #FF7A00;
+  fill: #FF7A00;
+}
+
+#userB {
+  height: 30px;
+}
+/*# sourceMappingURL=calendar.css.map */

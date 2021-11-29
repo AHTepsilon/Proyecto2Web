@@ -10,7 +10,8 @@ module.exports =
         login: "./src/loginScreen.js",
         signUp: "./src/signUpScreen.js",
         landingPage: "./src/landingPage.js",
-        marketHouse: "./src/marketHouse.js"
+        marketHouse: "./src/marketHouse.js",
+        calendar: "./src/calendar.js"
     },  
     output: 
     {
