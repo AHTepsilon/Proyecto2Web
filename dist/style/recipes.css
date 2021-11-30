@@ -1,0 +1,104 @@
+body {
+  background-color: white;
+}
+
+header {
+  background-color: #A1D51C;
+  width: 1307px;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+  margin: -10px;
+  padding: 10px;
+  background: #A1D51C;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#upperHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -10px;
+}
+
+#imageLogo {
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 200px;
+  height: 52.33px;
+}
+
+#imageLogo:hover {
+  cursor: pointer;
+}
+
+#navigationBar {
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.itsabutton {
+  margin-left: 30px;
+  margin-right: 30px;
+  border: none;
+  background: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+.itsabutton:hover {
+  cursor: pointer;
+  color: #FF7A00;
+  fill: #FF7A00;
+}
+
+#userB {
+  height: 30px;
+}
+
+#buttonsDiv {
+  font-family: Nunito;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.articleButton {
+  font-family: Nunito;
+  width: 185px;
+  height: 32px;
+  left: 397px;
+  top: 286px;
+  border: none;
+  background: #F2F2F2;
+  color: #3D348B;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.articleButton:hover {
+  cursor: pointer;
+  background: #A1D51C;
+  color: white;
+}
+
+.card_recipe {
+  background-color: #FF7A00;
+}
+/*# sourceMappingURL=recipes.css.map */

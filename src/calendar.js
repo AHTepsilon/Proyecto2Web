@@ -6,7 +6,7 @@ import {getFirebaseConfig} from "./firebase-config";
 const firebaseAppConfig = getFirebaseConfig();
 const firebaseApp = initializeApp(firebaseAppConfig);
 
-const scannedItemsBtn = document.getElementById("scannedItemsButton");
+const scannedItemsBtn = document.getElementById("scannedItemsButton"); //recipes button
 const marketHouseBtn = document.getElementById("marketHouseButton");
 const savedBtn = document.getElementById("savedButton");
 const userBtn = document.getElementById("userButton");
@@ -21,4 +21,9 @@ logoHyperlink.addEventListener("click", function()
 marketHouseBtn.addEventListener("click", function()
 {
     window.location.href = "marketHouse.html";
+});
+
+scannedItemsBtn.addEventListener("click", function()
+{
+    window.location.href = "recipes.html";
 });

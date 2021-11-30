@@ -124,4 +124,52 @@ header {
   background: #A1D51C;
   color: white;
 }
+
+#explainDiv {
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 35px;
+  margin-left: 175px;
+  margin-right: 175px;
+  font-family: Nunito;
+  color: #3D348B;
+  font-weight: bold;
+}
+
+.colorCode {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+#colorCodesDiv {
+  font-family: Nunito;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=marketHouse.css.map */

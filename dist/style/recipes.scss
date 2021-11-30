@@ -17,7 +17,6 @@ body /*Fondo*/
     align-items: center;
 }
 
-
 @mixin keepInCenterHorizontal
 {
     font-family: Nunito;
@@ -93,3 +92,39 @@ header
     height: 30px;
 }
 
+#buttonsDiv
+{
+    @include keepInCenterHorizontal();
+
+    margin-top: 100px;
+}
+
+.articleButton
+{
+    font-family: Nunito;
+    width: 185px;
+    height: 32px;
+    left: 397px;
+    top: 286px;
+
+    border:none;
+
+    background: #F2F2F2;
+    color: #3D348B;
+    backdrop-filter: blur(4px);
+
+    border-radius: 10px;
+    margin: 10px;
+
+    &:hover
+    {
+        cursor: pointer;
+        background: $mainButtonColor;
+        color: white;
+    }
+}
+
+.card_recipe
+{
+    background-color: #FF7A00;
+}

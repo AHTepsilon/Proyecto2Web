@@ -11,7 +11,8 @@ module.exports =
         signUp: "./src/signUpScreen.js",
         landingPage: "./src/landingPage.js",
         marketHouse: "./src/marketHouse.js",
-        calendar: "./src/calendar.js"
+        calendar: "./src/calendar.js",
+        recipes: "./src/recipes.js"
     },  
     output: 
     {

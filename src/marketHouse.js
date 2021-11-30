@@ -23,3 +23,9 @@ calendarBtn.addEventListener("click", function()
 {
     window.location.href = "calendar.html";
 });
+
+
+scannedItemsBtn.addEventListener("click", function()
+{
+    window.location.href = "recipes.html";
+});

@@ -17,6 +17,16 @@ body /*Fondo*/
     align-items: center;
 }
 
+@mixin keepInCenterHorizontal
+{
+    font-family: Nunito;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
 header
 {
     background-color: $bgColor;
@@ -102,12 +112,7 @@ header
 
 #buttonsDiv
 {
-    font-family: Nunito;
-    margin: auto;
-    justify-content: center;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
+    @include keepInCenterHorizontal();
 }
 
 .articleButton
@@ -133,4 +138,30 @@ header
         background: $mainButtonColor;
         color: white;
     }
+}
+
+#explainDiv
+{
+    @include keepInCenter();
+
+    text-align: center;
+    margin: 35px;
+    margin-left: 175px;
+    margin-right: 175px;
+
+    font-family: Nunito;
+    color: #3D348B;
+    font-weight: bold;
+}
+
+.colorCode
+{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+#colorCodesDiv
+{
+    @include keepInCenterHorizontal();
 }
