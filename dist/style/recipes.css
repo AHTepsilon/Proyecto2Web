@@ -99,6 +99,22 @@ header {
 }
 
 .card_recipe {
-  background-color: #FF7A00;
+  font-family: Nunito;
+  background: #FAFAFA;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 15px rgba(101, 153, 34, 0.5);
+          box-shadow: 0px 4px 15px rgba(101, 153, 34, 0.5);
+  border-radius: 10px;
+}
+
+.card_ingredients {
+  padding-left: 40px;
+}
+
+.card_instructions {
+  padding-left: 40px;
+  margin-right: 140px;
 }
 /*# sourceMappingURL=recipes.css.map */

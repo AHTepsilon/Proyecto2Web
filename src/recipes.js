@@ -6,6 +6,7 @@ import { recipes_cards } from "./recipes_cards";
 
 const firebaseAppConfig = getFirebaseConfig();
 const firebaseApp = initializeApp(firebaseAppConfig);
+const db = getDatabase();
 
 const scannedItemsBtn = document.getElementById("scannedItemsButton");
 const marketHouseBtn = document.getElementById("marketHouseButton");
@@ -42,26 +43,90 @@ savedBtn.addEventListener("click", function()
     window.location.href = "statistics.html";
 }); 
 
-
-function updateRecipeList()
+function getBreakfastRecipes()
 {
+    const dbRef = ref(db, 'recipes' + '/' + 'breakfast');
 
-    const reCard = new recipes_cards("Oat Banana Hot Cakes",
-     "2 bananas <br> 2 eggs <br><br> 1/2 cup rolled oats <br><br> 1/2 teaspoon baking powder <br><br> pinch of salt"
-     );
-    const reCard2 = new recipes_cards("bepsi", 
-     "mmmmm bespi"
-        );
-
-    breakfastBtn.addEventListener("click", (e, ev) =>
+    onValue(dbRef, (snapshot) =>
     {
-
-        recipeL.appendChild(reCard.drawBreakfastCards());
-        recipeL.appendChild(reCard2.drawBreakfastCards());
-
-        console.log(reCard);
-        console.log(reCard2);
+        const data = snapshot.val();
+        console.log(data);
+        updateRecipeList(data);
     });
 }
 
-updateRecipeList();
+function getLunchRecipes()
+{
+    const dbRef = ref(db, 'recipes' + '/' + 'lunch');
+
+    onValue(dbRef, (snapshot) =>
+    {
+        const data = snapshot.val();
+        console.log(data);
+        updateRecipeList(data);
+    });
+}
+
+function getDinnerRecipes()
+{
+    const dbRef = ref(db, 'recipes' + '/' + 'dinner');
+
+    onValue(dbRef, (snapshot) =>
+    {
+        const data = snapshot.val();
+        console.log(data);
+        updateRecipeList(data);
+    });
+}
+
+function getSnackRecipes()
+{
+    const dbRef = ref(db, 'recipes' + '/' + 'snack');
+
+    onValue(dbRef, (snapshot) =>
+    {
+        const data = snapshot.val();
+        console.log(data);
+        updateRecipeList(data);
+    });
+}
+
+function updateRecipeList(data)
+{
+    if(data)
+    {
+        recipeL.innerHTML = "";
+
+        Object.keys(data).forEach((key, index) =>
+        {
+            console.log(key, index);
+            const recipe = new recipes_cards(data[key]);
+
+            recipeL.appendChild(recipe.drawCards());
+        });
+    }
+}
+
+breakfastBtn.addEventListener("click", (e, ev) =>
+{
+    console.log("wow");
+    getBreakfastRecipes();
+});
+
+lunchBtn.addEventListener("click", (e, ev) =>
+{
+    console.log("wow");
+    getLunchRecipes();
+});
+
+dinnerBtn.addEventListener("click", (e, ev) =>
+{
+    console.log("wow");
+    getDinnerRecipes();
+});
+
+snackBtn.addEventListener("click", (e, ev) =>
+{
+    console.log("wow");
+    getSnackRecipes();
+});

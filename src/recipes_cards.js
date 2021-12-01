@@ -1,14 +1,14 @@
+import { getDatabase, ref, set, onValue, push } from 'firebase/database';
 
 export class recipes_cards
 {
 
-    constructor(recipe_title, recipe_ingredients)
+    constructor(recipe)
     {
-        this.recipe_title = recipe_title;
-        this.recipe_ingredients = recipe_ingredients;
+        this.recipe = recipe;
     }
 
-    drawBreakfastCards()
+    drawCards()
     {   
         console.log("yeah okay");
 
@@ -16,15 +16,20 @@ export class recipes_cards
         card.className = "card_recipe";
 
         let recipeTitle = document.createElement("h3");
-        recipeTitle.className = "card_recipe_title_1";
-        recipeTitle.innerHTML = this.recipe_title;
+        recipeTitle.className = "card_recipe_title";
+        recipeTitle.innerHTML = this.recipe.NAME;
 
         let recipeIngredients = document.createElement("p");
-        recipeIngredients.className = "card_ingredients_1";
-        recipeIngredients.innerHTML = this.recipe_ingredients;
+        recipeIngredients.className = "card_ingredients";
+        recipeIngredients.innerHTML = this.recipe.INGREDIENTS;
+
+        let recipeInstructions = document.createElement("p");
+        recipeInstructions.className = "card_instructions";
+        recipeInstructions.innerHTML = this.recipe.INSTRUCTIONS;
 
         card.appendChild(recipeTitle);
         card.appendChild(recipeIngredients);
+        card.appendChild(recipeInstructions);
 
         return card;
     }

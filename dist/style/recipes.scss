@@ -126,5 +126,26 @@ header
 
 .card_recipe
 {
-    background-color: #FF7A00;
+    font-family: Nunito;
+    background: #FAFAFA;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgba(101, 153, 34, 0.5);
+    border-radius: 10px;
+}
+
+@mixin recipesText()
+{
+    padding-left: 40px;
+}
+
+.card_ingredients
+{
+    @include recipesText();
+}
+
+.card_instructions
+{
+    @include recipesText();
+    margin-right: 140px;
 }
