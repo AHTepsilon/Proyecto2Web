@@ -37,6 +37,12 @@ calendarBtn.addEventListener("click", function()
     window.location.href = "calendar.html";
 });
 
+savedBtn.addEventListener("click", function()
+{
+    window.location.href = "statistics.html";
+});
+
+
 function updateRecipeList()
 {
 

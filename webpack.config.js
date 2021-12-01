@@ -12,7 +12,8 @@ module.exports =
         landingPage: "./src/landingPage.js",
         marketHouse: "./src/marketHouse.js",
         calendar: "./src/calendar.js",
-        recipes: "./src/recipes.js"
+        recipes: "./src/recipes.js",
+        statistics: "./src/statistics.js"
     },  
     output: 
     {

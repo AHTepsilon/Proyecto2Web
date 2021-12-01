@@ -12,23 +12,25 @@ const savedBtn = document.getElementById("savedButton");
 const userBtn = document.getElementById("userButton");
 const calendarBtn = document.getElementById("calendar");
 
-marketHouseBtn.addEventListener("click", function()
+const logoHyperlink = document.getElementById("imageLogo");
+
+logoHyperlink.addEventListener("click", function()
 {
-    window.location.href = "marketHouse.html";
-});
+    window.location.href = "landingPage.html";
+})
 
 calendarBtn.addEventListener("click", function()
 {
     window.location.href = "calendar.html";
 });
 
-
 scannedItemsBtn.addEventListener("click", function()
 {
     window.location.href = "recipes.html";
 });
 
-savedBtn.addEventListener("click", function()
+marketHouseBtn.addEventListener("click", function()
 {
-    window.location.href = "statistics.html";
+    window.location.href = "marketHouse.html";
 });
+

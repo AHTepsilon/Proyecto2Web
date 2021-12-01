@@ -27,3 +27,8 @@ scannedItemsBtn.addEventListener("click", function()
 {
     window.location.href = "recipes.html";
 });
+
+savedBtn.addEventListener("click", function()
+{
+    window.location.href = "statistics.html";
+});

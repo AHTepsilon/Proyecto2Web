@@ -57,32 +57,4 @@ header {
 #userB {
   height: 30px;
 }
-
-#calendarShowcase {
-  width: 842px;
-  height: 452px;
-  margin-top: 30px;
-  background: #FFFFFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 4px 15px rgba(65, 78, 80, 0.1);
-          box-shadow: 0px 4px 15px rgba(65, 78, 80, 0.1);
-  border-radius: 10px;
-  border: none;
-  font-family: 'Nunito', sans-serif;
-}
-
-#itemsShowcase {
-  background: #FFFFFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 4px 15px rgba(65, 78, 80, 0.1);
-          box-shadow: 0px 4px 15px rgba(65, 78, 80, 0.1);
-  border-radius: 10px;
-  border: none;
-  font-family: 'Nunito', sans-serif;
-  margin-left: 860px;
-  margin-top: -450px;
-  height: 452px;
-}
-/*# sourceMappingURL=calendar.css.map */
+/*# sourceMappingURL=statistics.css.map */
