@@ -117,6 +117,20 @@ article
     @include showcases();
 }
 
+#calendarTitle
+{
+    margin-left: 30px;
+    padding-top: 20px;
+    color: #3D348B;
+}
+
+#calendarImg
+{
+    padding-top: 20px;
+    width: 742px;
+    height: 352px;
+}
+
 #itemsShowcase
 {
     @include showcases();

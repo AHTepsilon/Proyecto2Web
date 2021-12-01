@@ -72,6 +72,18 @@ header {
   font-family: 'Nunito', sans-serif;
 }
 
+#calendarTitle {
+  margin-left: 30px;
+  padding-top: 20px;
+  color: #3D348B;
+}
+
+#calendarImg {
+  padding-top: 20px;
+  width: 742px;
+  height: 352px;
+}
+
 #itemsShowcase {
   background: #FFFFFF;
   -webkit-box-sizing: border-box;

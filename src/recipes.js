@@ -18,7 +18,7 @@ const lunchBtn = document.getElementById("lunchButton");
 const dinnerBtn = document.getElementById("dinnerButton");
 const snackBtn = document.getElementById("snackButton");
 
-const recipeL = document.getElementById("recipeList");
+let recipeL = document.getElementById("recipeList");
 
 const logoHyperlink = document.getElementById("imageLogo");
 
@@ -40,18 +40,24 @@ calendarBtn.addEventListener("click", function()
 savedBtn.addEventListener("click", function()
 {
     window.location.href = "statistics.html";
-});
+}); 
 
 
 function updateRecipeList()
 {
 
+    const reCard = new recipes_cards("Oat Banana Hot Cakes",
+     "2 bananas <br> 2 eggs <br><br> 1/2 cup rolled oats <br><br> 1/2 teaspoon baking powder <br><br> pinch of salt"
+     );
+    const reCard2 = new recipes_cards("bepsi", 
+     "mmmmm bespi"
+        );
+
     breakfastBtn.addEventListener("click", (e, ev) =>
     {
-        const reCard = new recipes_cards("Oat Banana Hot Cakes", "woah, banan");
-        const reCard2 = new recipes_cards("bepsi", "mmmmm bespi");
-        recipeL.appendChild = reCard.drawBreakfastCards();
-        recipeL.appendChild = reCard2.drawBreakfastCards();
+
+        recipeL.appendChild(reCard.drawBreakfastCards());
+        recipeL.appendChild(reCard2.drawBreakfastCards());
 
         console.log(reCard);
         console.log(reCard2);
