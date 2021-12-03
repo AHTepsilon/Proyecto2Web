@@ -172,4 +172,37 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+
+#foodCardsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.ayeImg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.food_card {
+  background: #FAFAFA;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 200px;
+  font-family: Nunito;
+  color: #3D348B;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.food_card_name {
+  color: #3D348B;
+}
 /*# sourceMappingURL=marketHouse.css.map */
