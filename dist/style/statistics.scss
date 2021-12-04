@@ -91,3 +91,45 @@ header
 {
     height: 30px;
 }
+
+#statisticsTitle
+{
+    @include keepInCenter();
+    width: 840px;
+    height: 51px;
+    left: 450px;
+    top: 180px;
+    margin-top: 50px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+
+    color: #3D348B;
+}
+
+#statisticsExplainDiv
+{
+    @include keepInCenter();
+
+    text-align: center;
+    margin: 15px;
+    margin-left: 175px;
+    margin-right: 175px;
+
+    font-family: Nunito;
+    color: #3D348B;
+    font-weight: bold;
+}
+
+#statisticsShowcase1
+{
+    background: #FFFFFF;
+    border: 0.5px solid rgba(61, 52, 139, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(61, 52, 139, 0.25);
+    border-radius: 10px;
+    margin: 15px;
+}

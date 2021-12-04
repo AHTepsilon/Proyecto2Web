@@ -37,5 +37,8 @@ savedBtn.addEventListener("click", function()
 
 userBtn.addEventListener("click", (e, ev) =>
 {
-    const popup = document.createElement("div");
+    if(window.confirm("Do you wish to log out?"))
+    {
+        
+    }
 });
