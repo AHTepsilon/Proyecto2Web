@@ -2,9 +2,13 @@ import {initializeApp} from "firebase/app";
 import {getDatabase, ref, set, onValue, push} from "firebase/database";
 
 import {getFirebaseConfig} from "./firebase-config";
+import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
 
 const firebaseAppConfig = getFirebaseConfig();
 const firebaseApp = initializeApp(firebaseAppConfig);
+
+const db = getDatabase();
+const auth = getAuth();
 
 const scannedItemsBtn = document.getElementById("scannedItemsButton");
 const marketHouseBtn = document.getElementById("marketHouseButton");
@@ -37,8 +41,15 @@ savedBtn.addEventListener("click", function()
 
 userBtn.addEventListener("click", (e, ev) =>
 {
-    if(window.confirm("Do you wish to log out?"))
+    if(confirm("Do you wish to log out?"))
     {
-        
+        auth.signOut().then(()=>
+        {
+            window.location.href = "index.html";
+        })
+        .catch((error)=>
+        {
+            alert(error.message);
+        });
     }
 });

@@ -3,8 +3,11 @@ import {getDatabase, ref, set, onValue, push} from "firebase/database";
 
 import {getFirebaseConfig} from "./firebase-config";
 
+import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
+
 const firebaseAppConfig = getFirebaseConfig();
 const firebaseApp = initializeApp(firebaseAppConfig);
+const auth = getAuth();
 
 const scannedItemsBtn = document.getElementById("scannedItemsButton");
 const marketHouseBtn = document.getElementById("marketHouseButton");
@@ -32,5 +35,20 @@ scannedItemsBtn.addEventListener("click", function()
 marketHouseBtn.addEventListener("click", function()
 {
     window.location.href = "marketHouse.html";
+});
+
+userBtn.addEventListener("click", (e, ev) =>
+{
+    if(confirm("Do you wish to log out?"))
+    {
+        auth.signOut().then(()=>
+        {
+            window.location.href = "index.html";
+        })
+        .catch((error)=>
+        {
+            alert(error.message);
+        });
+    }
 });
 
