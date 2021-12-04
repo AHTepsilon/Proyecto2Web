@@ -4,9 +4,12 @@ import {getDatabase, ref, set, onValue, push} from "firebase/database";
 import {getFirebaseConfig} from "./firebase-config";
 import { recipes_cards } from "./recipes_cards";
 
+import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
+
 const firebaseAppConfig = getFirebaseConfig();
 const firebaseApp = initializeApp(firebaseAppConfig);
 const db = getDatabase();
+const auth = getAuth();
 
 const scannedItemsBtn = document.getElementById("scannedItemsButton");
 const marketHouseBtn = document.getElementById("marketHouseButton");
@@ -129,4 +132,19 @@ snackBtn.addEventListener("click", (e, ev) =>
 {
     console.log("wow");
     getSnackRecipes();
+});
+
+userBtn.addEventListener("click", (e, ev) =>
+{
+    if(confirm("Do you wish to log out?"))
+    {
+        auth.signOut().then(()=>
+        {
+            window.location.href = "index.html";
+        })
+        .catch((error)=>
+        {
+            alert(error.message);
+        });
+    }
 });
