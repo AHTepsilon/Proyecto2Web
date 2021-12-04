@@ -62,7 +62,6 @@ header {
   width: 842px;
   height: 452px;
   margin-top: 30px;
-  background: #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 15px rgba(65, 78, 80, 0.1);
@@ -84,8 +83,17 @@ header {
   height: 352px;
 }
 
+#itemsShowShow {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 #itemsShowcase {
-  background: #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 15px rgba(65, 78, 80, 0.1);
@@ -94,7 +102,76 @@ header {
   border: none;
   font-family: 'Nunito', sans-serif;
   margin-left: 860px;
-  margin-top: -450px;
-  height: 452px;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -472px;
+}
+
+#itemsShowcase2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 15px rgba(65, 78, 80, 0.1);
+          box-shadow: 0px 4px 15px rgba(65, 78, 80, 0.1);
+  border-radius: 10px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 860px;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#itemsShowcase3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 15px rgba(65, 78, 80, 0.1);
+          box-shadow: 0px 4px 15px rgba(65, 78, 80, 0.1);
+  border-radius: 10px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 860px;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ayeImg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.food_card {
+  /* background: #FAFAFA;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    width:200px;
+    font-family: Nunito;
+    color: #3D348B;
+
+    flex-direction: column;*/
+}
+
+.food_card_name {
+  color: #3D348B;
 }
 /*# sourceMappingURL=calendar.css.map */

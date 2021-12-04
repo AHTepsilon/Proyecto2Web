@@ -100,7 +100,6 @@ article
 
 @mixin showcases()
 {
-    background: #FFFFFF;
     box-sizing: border-box;
     box-shadow: 0px 4px 15px rgba(65, 78, 80, 0.1);
     border-radius: 10px;
@@ -131,10 +130,61 @@ article
     height: 352px;
 }
 
+@mixin iShowcases()
+{
+    margin-left: 860px;
+    height: auto;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+#itemsShowShow
+{
+    align-items: center;
+    flex-direction: column;
+}
+
 #itemsShowcase
 {
     @include showcases();
-    margin-left: 860px;
-    margin-top: -450px;
-    height: 452px;
+    @include iShowcases();
+    margin-top: -472px;
+}
+
+#itemsShowcase2
+{
+    @include showcases();
+    @include iShowcases();
+}
+
+#itemsShowcase3
+{
+    @include showcases();
+    @include iShowcases();
+}
+
+.ayeImg
+{
+    align-self: center;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.food_card
+{
+   /* background: #FAFAFA;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    width:200px;
+    font-family: Nunito;
+    color: #3D348B;
+
+    flex-direction: column;*/
+}
+
+.food_card_name
+{
+    color: #3D348B;
 }
