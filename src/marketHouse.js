@@ -113,9 +113,9 @@ function updateFoodList(info)
             const foodItem = new marketHouse_foodCards(info[key]);
             foodCardsD.appendChild(foodItem.render());
 
-            console.log(info[key].EXPIRES);
+            console.log(info[key].expires);
 
-            if(info[key].EXPIRES >= 15)
+            if(info[key].expires >= 15)
             {
                 const aye = document.createElement("img");
                 aye.src = "images/gren.png";
@@ -124,7 +124,7 @@ function updateFoodList(info)
                 foodCardsD.appendChild(aye);
             }
     
-            else if(info[key].EXPIRES >= 5 && info[key].EXPIRES < 15)
+            else if(info[key].expires >= 5 && info[key].expires < 15)
             {
                 const aye = document.createElement("img");
                 aye.src = "images/blu.png";
@@ -133,7 +133,7 @@ function updateFoodList(info)
                 foodCardsD.appendChild(aye);
             }
     
-            else if(info[key].EXPIRES >= 1 && info[key].EXPIRES < 5)
+            else if(info[key].expires >= 1 && info[key].expires < 5)
             {
                 const aye = document.createElement("img");
                 aye.src = "images/yello.png";
@@ -142,7 +142,7 @@ function updateFoodList(info)
                 foodCardsD.appendChild(aye);
             }
             
-            else if(info[key].EXPIRES < 1)
+            else if(info[key].expires < 1)
             {
                 const aye = document.createElement("img");
                 aye.src = "images/oreng.png";

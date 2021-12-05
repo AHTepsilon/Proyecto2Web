@@ -14,23 +14,23 @@ export class marketHouse_foodCards
 
         let foodName = document.createElement("h2");
         foodName.className = "food_card_name";
-        foodName.innerHTML = this.foodItem.NAME;
+        foodName.innerHTML = this.foodItem.name;
 
         let foodQuantity = document.createElement("h3");
         foodQuantity.className = "food_card_amount";
-        foodQuantity.innerHTML = "Amount: " + this.foodItem.QUANTITY;
+        foodQuantity.innerHTML = "Amount: " + this.foodItem.quantity;
 
         let foodWeight = document.createElement("h3");
         foodWeight.className = "food_card_weight";
-        foodWeight.innerHTML = "Weight: " + this.foodItem.WEIGHT + "kg";
+        foodWeight.innerHTML = "Weight: " + this.foodItem.weight + "kg";
 
         let foodBoughtIn = document.createElement("h4");
         foodBoughtIn.className = "food_bought_days";
-        foodBoughtIn.innerHTML = "How long ago was it bought: " + this.foodItem.BOUGHT + " days ago";
+        foodBoughtIn.innerHTML = "How long ago was it bought: " + this.foodItem.bought + " days ago";
 
         let foodExpiresIn = document.createElement("h4");
         foodExpiresIn.className = "food_expires_in";
-        foodExpiresIn.innerHTML = "Expires in: " + this.foodItem.EXPIRES + " days";
+        foodExpiresIn.innerHTML = "Expires in: " + this.foodItem.expires + " days";
 
         card.appendChild(foodName);
         card.appendChild(foodQuantity);
