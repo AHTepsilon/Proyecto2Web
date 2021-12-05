@@ -4,7 +4,7 @@ import {getDatabase, ref, set, onValue, push} from "firebase/database";
 import {getFirebaseConfig} from "./firebase-config";
 import { recipes_cards } from "./recipes_cards";
 
-import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
+import {getAuth, createUserWithEmailAndPassword, onAuthStateChanged} from 'firebase/auth';
 
 const firebaseAppConfig = getFirebaseConfig();
 const firebaseApp = initializeApp(firebaseAppConfig);
@@ -25,6 +25,17 @@ const snackBtn = document.getElementById("snackButton");
 let recipeL = document.getElementById("recipeList");
 
 const logoHyperlink = document.getElementById("imageLogo");
+
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+      console.log("user is loged in");
+      const uid = user.uid;
+    } else {
+  
+      window.location.href = "index.html";
+  
+    }
+  });
 
 logoHyperlink.addEventListener("click", function()
 {

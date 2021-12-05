@@ -2,7 +2,7 @@ import {initializeApp} from "firebase/app";
 import {getDatabase, ref, set, onValue, push} from "firebase/database";
 
 import {getFirebaseConfig} from "./firebase-config";
-import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
+import {getAuth, createUserWithEmailAndPassword, onAuthStateChanged} from 'firebase/auth';
 
 const firebaseAppConfig = getFirebaseConfig();
 const firebaseApp = initializeApp(firebaseAppConfig);
@@ -15,6 +15,17 @@ const marketHouseBtn = document.getElementById("marketHouseButton");
 const savedBtn = document.getElementById("savedButton");
 const userBtn = document.getElementById("userButton");
 const calendarBtn = document.getElementById("calendar");
+
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+      console.log("user is loged in");
+      const uid = user.uid;
+    } else {
+  
+      window.location.href = "index.html";
+  
+    }
+  });
 
 marketHouseBtn.addEventListener("click", function()
 {

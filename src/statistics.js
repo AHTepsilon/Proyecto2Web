@@ -3,7 +3,7 @@ import {getDatabase, ref, set, onValue, push} from "firebase/database";
 
 import {getFirebaseConfig} from "./firebase-config";
 
-import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
+import {getAuth, createUserWithEmailAndPassword, onAuthStateChanged} from 'firebase/auth';
 
 const firebaseAppConfig = getFirebaseConfig();
 const firebaseApp = initializeApp(firebaseAppConfig);
@@ -16,6 +16,17 @@ const userBtn = document.getElementById("userButton");
 const calendarBtn = document.getElementById("calendar");
 
 const logoHyperlink = document.getElementById("imageLogo");
+
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+      console.log("user is loged in");
+      const uid = user.uid;
+    } else {
+  
+      window.location.href = "index.html";
+  
+    }
+  });
 
 logoHyperlink.addEventListener("click", function()
 {

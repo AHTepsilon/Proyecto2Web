@@ -4,7 +4,7 @@ import {getDatabase, ref, set, onValue, push} from "firebase/database";
 import {getFirebaseConfig} from "./firebase-config";
 import { marketHouse_foodCards } from "./marketHouse_foodCards";
 
-import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
+import {getAuth, createUserWithEmailAndPassword, onAuthStateChanged} from 'firebase/auth';
 
 const firebaseAppConfig = getFirebaseConfig();
 const firebaseApp = initializeApp(firebaseAppConfig);
@@ -153,6 +153,17 @@ function updateFoodList(info)
         });
     }
 }
+
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+      console.log("user is loged in");
+      const uid = user.uid;
+    } else {
+  
+      window.location.href = "index.html";
+  
+    }
+  });
 
 fruitsBtn.addEventListener("click", (e, ev)=>
 {
